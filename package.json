@@ -1,0 +1,28 @@
+{
+  "name": "mercadolibre-frontend-test",
+  "version": "1.0.0",
+  "description": "Test Practico de Frontend para MercadoLibre",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "frontend",
+    "mercadolibre",
+    "meli",
+    "test"
+  ],
+  "author": "Rodrigo Lemos",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.5.0",
+    "prettier": "^1.10.2"
+  }
+}
