@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
-import { addQuery } from '../redux/modules/search'
+import { fetchItems } from '../redux/modules/search'
+// import { push } from 'react-router-redux'
 
 let SearchForItems = ({ dispatch }) => {
   let input
@@ -10,7 +11,8 @@ let SearchForItems = ({ dispatch }) => {
       className="nav-search"
       onSubmit={e => {
         e.preventDefault()
-        dispatch(addQuery(input.value))
+        dispatch(fetchItems(input.value))
+        // dispatch(push('/items'))
       }}
     >
       <input
