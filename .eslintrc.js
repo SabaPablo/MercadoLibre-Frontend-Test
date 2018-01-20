@@ -7,10 +7,16 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 2017,
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true
+    }
   },
   extends: 'plugin:prettier/recommended',
   rules: {
-    'no-unused-vars': 'error'
-  }
+    'no-unused-vars': 'error',
+    'react/jsx-uses-react': 'error',
+    'react/jsx-uses-vars': 'error'
+  },
+  plugins: ['react']
 }
