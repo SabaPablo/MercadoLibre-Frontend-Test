@@ -4,25 +4,28 @@
   "description": "Test Practico de Frontend para MercadoLibre",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "node server.js"
   },
-  "keywords": [
-    "frontend",
-    "mercadolibre",
-    "meli",
-    "test"
-  ],
+  "keywords": ["frontend", "mercadolibre", "meli", "test"],
   "author": "Rodrigo Lemos",
   "license": "MIT",
+  "jest": {
+    "transform": {}
+  },
   "dependencies": {
     "axios": "^0.17.1",
     "express": "^4.16.2"
   },
   "devDependencies": {
+    "@types/jest": "^22.0.1",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^22.1.0",
     "eslint": "^4.15.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.5.0",
-    "prettier": "^1.10.2"
+    "jest": "^22.1.4",
+    "prettier": "^1.10.2",
+    "regenerator-runtime": "^0.11.1"
   }
 }

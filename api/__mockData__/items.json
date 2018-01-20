@@ -1,0 +1,883 @@
+{
+  "site_id": "MLA",
+  "query": "iphone",
+  "paging": {
+    "total": 27228,
+    "offset": 0,
+    "limit": 4,
+    "primary_results": 1000
+  },
+  "results": [
+    {
+      "id": "MLA701558492",
+      "site_id": "MLA",
+      "title": "Celular Apple Iphone 6 16gb + Protector + Garantia + Local",
+      "seller": {
+        "id": 146480022,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 8499,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 2,
+      "sold_quantity": 19,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-01-06T04:00:00.000Z",
+      "condition": "used",
+      "permalink":
+        "http://articulo.mercadolibre.com.ar/MLA-701558492-celular-apple-iphone-6-16gb-protector-garantia-local-_JM",
+      "thumbnail":
+        "http://mla-s1-p.mlstatic.com/642433-MLA26243121762_102017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 980.08,
+        "rate": 38.38,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "San Nicolas"
+      },
+      "shipping": {
+        "free_shipping": false,
+        "mode": "me2",
+        "tags": []
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "San Nicolas"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "DFLT",
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "DFLT",
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "312149",
+          "value_name": "iPhone 6",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA352542",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6055012",
+      "reviews": {
+        "rating_average": 4.4,
+        "total": 631
+      }
+    },
+    {
+      "id": "MLA694937054",
+      "site_id": "MLA",
+      "title": "Iphone 5s 16gb Lte 4g + 2 Fundas + Templado + Envio Gratis!",
+      "seller": {
+        "id": 2924909,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 8949,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 8,
+      "sold_quantity": 27,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2037-11-26T02:55:14.000Z",
+      "condition": "new",
+      "permalink":
+        "http://articulo.mercadolibre.com.ar/MLA-694937054-iphone-5s-16gb-lte-4g-2-fundas-templado-envio-gratis-_JM",
+      "thumbnail":
+        "http://mla-s1-p.mlstatic.com/607790-MLA26517012096_122017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1031.97,
+        "rate": 38.38,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-B",
+        "state_name": "Buenos Aires",
+        "city_id": "",
+        "city_name": "Avellaneda,Gerli."
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": []
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+        },
+        "city": {
+          "id": "",
+          "name": "Avellaneda,Gerli."
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "DFLT",
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "DFLT",
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "312144",
+          "value_name": "iPhone 5s",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA121410",
+      "official_store_id": null,
+      "catalog_product_id": "MLA5513986",
+      "reviews": {
+        "rating_average": 4.4,
+        "total": 432
+      }
+    },
+    {
+      "id": "MLA702591859",
+      "site_id": "MLA",
+      "title": "Celular Apple Iphone 6 16gb + Protector + Garantia + Envio",
+      "seller": {
+        "id": 146480022,
+        "power_seller_status": "platinum",
+        "car_dealer": false,
+        "real_estate_agency": false,
+        "tags": []
+      },
+      "price": 8899,
+      "currency_id": "ARS",
+      "reservation_price": null,
+      "reservation_currency_id": null,
+      "available_quantity": 4,
+      "sold_quantity": 8,
+      "buying_mode": "buy_it_now",
+      "listing_type_id": "gold_special",
+      "stop_time": "2038-01-12T04:00:00.000Z",
+      "condition": "used",
+      "permalink":
+        "http://articulo.mercadolibre.com.ar/MLA-702591859-celular-apple-iphone-6-16gb-protector-garantia-envio-_JM",
+      "thumbnail":
+        "http://mla-s2-p.mlstatic.com/830568-MLA26243190607_102017-I.jpg",
+      "accepts_mercadopago": true,
+      "installments": {
+        "quantity": 12,
+        "amount": 1026.2,
+        "rate": 38.38,
+        "currency_id": "ARS"
+      },
+      "address": {
+        "state_id": "AR-C",
+        "state_name": "Capital Federal",
+        "city_id": "",
+        "city_name": "San Nicolas"
+      },
+      "shipping": {
+        "free_shipping": true,
+        "mode": "me2",
+        "tags": []
+      },
+      "seller_address": {
+        "id": "",
+        "comment": "",
+        "address_line": "",
+        "zip_code": "",
+        "country": {
+          "id": "AR",
+          "name": "Argentina"
+        },
+        "state": {
+          "id": "AR-C",
+          "name": "Capital Federal"
+        },
+        "city": {
+          "id": "",
+          "name": "San Nicolas"
+        },
+        "latitude": "",
+        "longitude": ""
+      },
+      "attributes": [
+        {
+          "attribute_group_id": "DFLT",
+          "attribute_group_name": "Otros",
+          "id": "BRAND",
+          "name": "Marca",
+          "value_id": "9344",
+          "value_name": "Apple",
+          "value_struct": null
+        },
+        {
+          "attribute_group_id": "DFLT",
+          "attribute_group_name": "Otros",
+          "id": "MODEL",
+          "name": "Modelo",
+          "value_id": "312149",
+          "value_name": "iPhone 6",
+          "value_struct": null
+        }
+      ],
+      "original_price": null,
+      "category_id": "MLA352542",
+      "official_store_id": null,
+      "catalog_product_id": "MLA6055012",
+      "reviews": {
+        "rating_average": 4.4,
+        "total": 631
+      }
+    }
+  ],
+  "secondary_results": [],
+  "related_results": [],
+  "sort": {
+    "id": "relevance",
+    "name": "Más relevantes"
+  },
+  "available_sorts": [
+    {
+      "id": "price_asc",
+      "name": "Menor precio"
+    },
+    {
+      "id": "price_desc",
+      "name": "Mayor precio"
+    }
+  ],
+  "filters": [
+    {
+      "id": "category",
+      "name": "Categorías",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA32089",
+          "name": "iPhone",
+          "path_from_root": [
+            {
+              "id": "MLA1051",
+              "name": "Celulares y Teléfonos"
+            },
+            {
+              "id": "MLA1055",
+              "name": "Celulares y Smartphones"
+            },
+            {
+              "id": "MLA32089",
+              "name": "iPhone"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "available_filters": [
+    {
+      "id": "99932089-AMLA_32089_1",
+      "name": "Modelo",
+      "type": "text",
+      "values": [
+        {
+          "id": "99932089-AMLA_32089_1-MMLA44806",
+          "name": "iPhone 6",
+          "results": 4544
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA62984",
+          "name": "iPhone 6S",
+          "results": 3680
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA81920",
+          "name": "iPhone 7",
+          "results": 3493
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA81921",
+          "name": "iPhone 7 Plus",
+          "results": 3017
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43876",
+          "name": "iPhone 5S",
+          "results": 2658
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA62985",
+          "name": "iPhone 6S Plus",
+          "results": 1477
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA87324",
+          "name": "iPhone X",
+          "results": 1343
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA44807",
+          "name": "iPhone 6 Plus",
+          "results": 1113
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA73847",
+          "name": "iPhone SE",
+          "results": 1057
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43874",
+          "name": "iPhone 5",
+          "results": 1032
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA87086",
+          "name": "iPhone 8",
+          "results": 797
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43881",
+          "name": "iPhone 4S",
+          "results": 792
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43875",
+          "name": "iPhone 5C",
+          "results": 762
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA87089",
+          "name": "iPhone 8 Plus",
+          "results": 662
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43877",
+          "name": "iPhone 4",
+          "results": 486
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43880",
+          "name": "iPhone 3GS",
+          "results": 96
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43879",
+          "name": "iPhone 3G",
+          "results": 60
+        },
+        {
+          "id": "99932089-AMLA_32089_1-MMLA43878",
+          "name": "Otros Modelos",
+          "results": 163
+        }
+      ]
+    },
+    {
+      "id": "99932089-AMLA_32089_2",
+      "name": "Capacidad",
+      "type": "text",
+      "values": [
+        {
+          "id": "99932089-AMLA_32089_2-MMLA43882",
+          "name": "16GB",
+          "results": 8615
+        },
+        {
+          "id": "99932089-AMLA_32089_2-MMLA43900",
+          "name": "64GB",
+          "results": 7218
+        },
+        {
+          "id": "99932089-AMLA_32089_2-MMLA43896",
+          "name": "32GB",
+          "results": 4509
+        },
+        {
+          "id": "99932089-AMLA_32089_2-MMLA44808",
+          "name": "128GB",
+          "results": 4082
+        },
+        {
+          "id": "99932089-AMLA_32089_2-MMLA81936",
+          "name": "256GB",
+          "results": 2172
+        },
+        {
+          "id": "99932089-AMLA_32089_2-MMLA43884",
+          "name": "8GB",
+          "results": 636
+        }
+      ]
+    },
+    {
+      "id": "state",
+      "name": "Ubicación",
+      "type": "text",
+      "values": [
+        {
+          "id": "TUxBUENBUGw3M2E1",
+          "name": "Capital Federal",
+          "results": 11699
+        },
+        {
+          "id": "TUxBUEdSQXJlMDNm",
+          "name": "Bs.As. G.B.A. Sur",
+          "results": 2940
+        },
+        {
+          "id": "TUxBUEdSQWU4ZDkz",
+          "name": "Bs.As. G.B.A. Norte",
+          "results": 2814
+        },
+        {
+          "id": "TUxBUEdSQWVmNTVm",
+          "name": "Bs.As. G.B.A. Oeste",
+          "results": 2253
+        },
+        {
+          "id": "TUxBUENPUmFkZGIw",
+          "name": "Córdoba",
+          "results": 1377
+        },
+        {
+          "id": "TUxBUFNBTmU5Nzk2",
+          "name": "Santa Fe",
+          "results": 1063
+        },
+        {
+          "id": "TUxBUFpPTmFpbnRl",
+          "name": "Buenos Aires Interior",
+          "results": 1032
+        },
+        {
+          "id": "TUxBUE1FTmE5OWQ4",
+          "name": "Mendoza",
+          "results": 390
+        },
+        {
+          "id": "TUxBUE1JU3MzNjIx",
+          "name": "Misiones",
+          "results": 350
+        },
+        {
+          "id": "TUxBUENPU2ExMmFkMw",
+          "name": "Bs.As. Costa Atlántica",
+          "results": 348
+        },
+        {
+          "id": "TUxBUFRVQ244NmM3",
+          "name": "Tucumán",
+          "results": 300
+        },
+        {
+          "id": "TUxBUENPUnM5MjI0",
+          "name": "Corrientes",
+          "results": 216
+        },
+        {
+          "id": "TUxBUFLNT29iZmZm",
+          "name": "Río Negro",
+          "results": 133
+        },
+        {
+          "id": "TUxBUE5FVW4xMzMzNQ",
+          "name": "Neuquén",
+          "results": 127
+        },
+        {
+          "id": "TUxBUEVOVHMzNTdm",
+          "name": "Entre Ríos",
+          "results": 114
+        },
+        {
+          "id": "TUxBUFNBTGFjMTJi",
+          "name": "Salta",
+          "results": 114
+        },
+        {
+          "id": "TUxBUEZPUmE1OTk5",
+          "name": "Formosa",
+          "results": 90
+        },
+        {
+          "id": "TUxBUENIQW8xMTNhOA",
+          "name": "Chaco",
+          "results": 84
+        },
+        {
+          "id": "TUxBUFNBTm5lYjU4",
+          "name": "San Juan",
+          "results": 72
+        },
+        {
+          "id": "TUxBUFNBTm9lOTlk",
+          "name": "Santiago del Estero",
+          "results": 72
+        },
+        {
+          "id": "TUxBUFNBTnM0ZTcz",
+          "name": "San Luis",
+          "results": 72
+        },
+        {
+          "id": "TUxBUEpVSnk3YmUz",
+          "name": "Jujuy",
+          "results": 60
+        },
+        {
+          "id": "TUxBUExBWmEyNzY0",
+          "name": "La Rioja",
+          "results": 48
+        },
+        {
+          "id": "TUxBUENIVXQxNDM1MQ",
+          "name": "Chubut",
+          "results": 42
+        },
+        {
+          "id": "TUxBUFNBTno3ZmY5",
+          "name": "Santa Cruz",
+          "results": 36
+        },
+        {
+          "id": "TUxBUENBVGFiY2Fm",
+          "name": "Catamarca",
+          "results": 30
+        },
+        {
+          "id": "TUxBUExBWmE1OWMy",
+          "name": "La Pampa",
+          "results": 30
+        },
+        {
+          "id": "TUxBUFRJRVoxM2M5YQ",
+          "name": "Tierra del Fuego",
+          "results": 18
+        }
+      ]
+    },
+    {
+      "id": "price",
+      "name": "Precio",
+      "type": "range",
+      "values": [
+        {
+          "id": "*-7500.0",
+          "name": "Hasta $ 7.500",
+          "results": 8325
+        },
+        {
+          "id": "7500.0-10000.0",
+          "name": "$7.500 a $10.000",
+          "results": 4531
+        },
+        {
+          "id": "10000.0-*",
+          "name": "Más de $10.000",
+          "results": 14376
+        }
+      ]
+    },
+    {
+      "id": "accepts_mercadopago",
+      "name": "Filtro por MercadoPago",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con MercadoPago",
+          "results": 27232
+        }
+      ]
+    },
+    {
+      "id": "installments",
+      "name": "Pago",
+      "type": "text",
+      "values": [
+        {
+          "id": "yes",
+          "name": "En cuotas",
+          "results": 27202
+        },
+        {
+          "id": "no_interest",
+          "name": "Sin interés",
+          "results": 2372
+        }
+      ]
+    },
+    {
+      "id": "condition",
+      "name": "Condición",
+      "type": "text",
+      "values": [
+        {
+          "id": "new",
+          "name": "Nuevo",
+          "results": 6633
+        },
+        {
+          "id": "used",
+          "name": "Usado",
+          "results": 20137
+        }
+      ]
+    },
+    {
+      "id": "shipping",
+      "name": "Envío",
+      "type": "text",
+      "values": [
+        {
+          "id": "mercadoenvios",
+          "name": "Mercado Envíos",
+          "results": 16172
+        },
+        {
+          "id": "free",
+          "name": "Envío gratis",
+          "results": 3699
+        }
+      ]
+    },
+    {
+      "id": "power_seller",
+      "name": "Filtro por calidad de vendedores",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Mejores vendedores",
+          "results": 683
+        }
+      ]
+    },
+    {
+      "id": "buying_mode",
+      "name": "Filtro por tipo de venta",
+      "type": "text",
+      "values": [
+        {
+          "id": "buy_it_now",
+          "name": "Compra inmediata",
+          "results": 27232
+        }
+      ]
+    },
+    {
+      "id": "since",
+      "name": "Filtro por fecha de comienzo",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Publicados hoy",
+          "results": 522
+        }
+      ]
+    },
+    {
+      "id": "until",
+      "name": "Filtro por fecha de finalización",
+      "type": "text",
+      "values": [
+        {
+          "id": "today",
+          "name": "Finalizan hoy",
+          "results": 204
+        }
+      ]
+    },
+    {
+      "id": "has_video",
+      "name": "Filtro por publicaciones con video",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Publicaciones con video",
+          "results": 608
+        }
+      ]
+    },
+    {
+      "id": "has_pictures",
+      "name": "Filtro por publicaciones con imágenes",
+      "type": "boolean",
+      "values": [
+        {
+          "id": "yes",
+          "name": "Con fotos",
+          "results": 27004
+        }
+      ]
+    },
+    {
+      "id": "product",
+      "name": "Producto",
+      "type": "text",
+      "values": [
+        {
+          "id": "MLA6055012",
+          "name": "Apple iPhone 6",
+          "results": 4209
+        },
+        {
+          "id": "MLA6127568",
+          "name": "Apple iPhone 6s",
+          "results": 3602
+        },
+        {
+          "id": "MLA6240112",
+          "name": "Apple iPhone 7",
+          "results": 3427
+        },
+        {
+          "id": "MLA6240128",
+          "name": "Apple iPhone 7 Plus",
+          "results": 2732
+        },
+        {
+          "id": "MLA5513986",
+          "name": "Apple iPhone 5s",
+          "results": 2574
+        },
+        {
+          "id": "MLA6143807",
+          "name": "Apple iPhone 6s Plus",
+          "results": 1361
+        },
+        {
+          "id": "MLA7979515",
+          "name": "Apple iPhone X",
+          "results": 1267
+        },
+        {
+          "id": "MLA6055022",
+          "name": "Apple iPhone 6 Plus",
+          "results": 1017
+        },
+        {
+          "id": "MLA6174076",
+          "name": "Apple iPhone SE",
+          "results": 979
+        },
+        {
+          "id": "MLA8752429",
+          "name": "Apple iPhone 8",
+          "results": 800
+        },
+        {
+          "id": "MLA8752450",
+          "name": "Apple iPhone 8 Plus",
+          "results": 729
+        },
+        {
+          "id": "MLA6007305",
+          "name": "Apple iPhone 5s - Oro - 16 GB - 1 GB",
+          "results": 188
+        },
+        {
+          "id": "MLA6055013",
+          "name": "Apple iPhone 6 - Plata - 16 GB - 1 GB",
+          "results": 183
+        },
+        {
+          "id": "MLA6055014",
+          "name": "Apple iPhone 6 - Oro - 16 GB - 1 GB",
+          "results": 176
+        },
+        {
+          "id": "MLA6127575",
+          "name": "Apple iPhone 6s - Dorado - 64 GB - 2 GB",
+          "results": 175
+        },
+        {
+          "id": "MLA6055016",
+          "name": "Apple iPhone 6 - Plata - 64 GB - 1 GB",
+          "results": 121
+        },
+        {
+          "id": "MLA6007095",
+          "name": "Apple iPhone",
+          "results": 98
+        },
+        {
+          "id": "MLA6087419",
+          "name": "Apple iPhone 5",
+          "results": 1014
+        },
+        {
+          "id": "MLA5514137",
+          "name": "Apple iPhone 4s",
+          "results": 786
+        },
+        {
+          "id": "MLA5514050",
+          "name": "Apple iPhone 5c",
+          "results": 750
+        },
+        {
+          "id": "MLA6006715",
+          "name": "Apple iPhone 4",
+          "results": 480
+        }
+      ]
+    }
+  ]
+}

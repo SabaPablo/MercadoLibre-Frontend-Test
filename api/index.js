@@ -1,5 +1,6 @@
 const express = require('express')
 const axios = require('axios')
+const { parseItemsResponse, parseItemDetailResponse } = require('./parser')
 
 const router = express.Router()
 
@@ -8,42 +9,18 @@ const meliRequest = axios.create({
   baseURL: 'https://api.mercadolibre.com'
 })
 
-const author = {
-  name: 'Rodrigo',
-  lastName: 'Lemos'
-}
+// Ping route for availability check.
+router.get('/ping', (req, res) => res.json({ msg: 'pong' }))
 
-router.get('/items', async ({ query: { q = '' } }, res, next) => {
+router.get('/items', async ({ query: { q } }, res, next) => {
   try {
     const { data: { results, filters } } = await meliRequest.get(
-      `sites/MLA/search?q=${q}`
+      `sites/MLA/search?q=${q}&limit=4`
     )
 
-    // Map Meli API results [] to internal app API array.
-    const items = results.map(result => {
-      return {
-        id: result.id,
-        title: result.title,
-        price: {
-          currency: result.currency_id
-        },
-        picture: result.thumbnail,
-        condition: result.condition,
-        free_shipping: result.shipping.free_shipping
-      }
-    })
-
-    // Build json categories structure from path_from_root API array.
-    const categories = []
-
-    if (filters.length) {
-      const { path_from_root: pathFromRoot } = filters[0].values[0]
-      categories = pathFromRoot.map(category => category.name)
-    }
-
-    res.send({ author, categories, items })
+    res.send(parseItemsResponse({ results, filters }))
   } catch (err) {
-    next(err)
+    next(err.data)
   }
 })
 
@@ -56,22 +33,9 @@ router.get('/items/:id', async ({ params: { id } }, res, next) => {
       ]
     )
 
-    const item = {
-      id: itemDetail.id,
-      title: itemDetail.title,
-      price: {
-        currency: itemDetail.currency_id
-      },
-      picture: itemDetail.pictures.length ? itemDetail.pictures[0].url : '',
-      condition: itemDetail.condition,
-      free_shipping: itemDetail.shipping.free_shipping,
-      sold_quantity: itemDetail.sold_quantity,
-      description: itemDescription.plain_text
-    }
-
-    res.send({ author, item })
+    res.send(parseItemDetailResponse({ itemDetail, itemDescription }))
   } catch (err) {
-    next(err)
+    next(err.data)
   }
 })
 
