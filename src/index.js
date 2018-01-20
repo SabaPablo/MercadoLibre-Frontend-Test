@@ -1,5 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './containers/App'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import search from './redux/modules/search'
+import App from './App'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+let store = createStore(
+  search,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+)
