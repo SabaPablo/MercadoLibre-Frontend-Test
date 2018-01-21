@@ -10,11 +10,14 @@ const parseItemsResponse = ({ results, filters }) => {
       id: result.id,
       title: result.title,
       price: {
-        currency: result.currency_id
+        currency: result.currency_id,
+        amount: result.price
       },
       picture: result.thumbnail,
+      pictures: result.pictures,
       condition: result.condition,
-      free_shipping: result.shipping.free_shipping
+      free_shipping: result.shipping.free_shipping,
+      location: result.address.state_name
     }
   })
 

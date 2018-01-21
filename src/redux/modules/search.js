@@ -1,19 +1,16 @@
 import axios from 'axios'
-
-// const internalRequest = axios.create({
-//   baseURL: 'http://localhost:3000'
-// })
+import { push } from 'react-router-redux'
 
 // Actions
 
 const REQUEST_ITEMS = 'meli-frontend/search/REQUEST_ITEMS'
 const RECEIVE_ITEMS = 'meli-frontend/search/RECEIVE_ITEMS'
-// const FETCH_ITEMS = 'meli-frontend/search/FETCH_ITEMS'
 
 // Initial State
 
 const initialState = {
   searchTerm: '',
+  isFetchingData: false,
   searchResult: {}
 }
 
@@ -24,8 +21,11 @@ export function requestItems(searchTerm) {
 }
 
 export function receiveItems(searchTerm, searchResult) {
-  console.log(`Items are ${searchResult}`)
-  return { type: RECEIVE_ITEMS, searchTerm, searchResult }
+  return {
+    type: RECEIVE_ITEMS,
+    searchTerm,
+    searchResult
+  }
 }
 
 // Reducers
@@ -33,10 +33,11 @@ export function receiveItems(searchTerm, searchResult) {
 export default function search(state = initialState, action) {
   switch (action.type) {
     case REQUEST_ITEMS:
-      return { ...state, searchTerm: action.searchTerm }
+      return { ...state, isFetchingData: true, searchTerm: action.searchTerm }
     case RECEIVE_ITEMS:
       return {
         ...state,
+        isFetchingData: false,
         searchTerm: action.searchTerm,
         searchResult: action.searchResult
       }
@@ -53,6 +54,7 @@ export function fetchItems(searchTerm) {
     dispatch(requestItems(searchTerm))
 
     try {
+      dispatch(push('/items'))
       const { data } = await axios.get(`/api/items?q=${searchTerm}`)
       dispatch(receiveItems(searchTerm, data))
     } catch (e) {

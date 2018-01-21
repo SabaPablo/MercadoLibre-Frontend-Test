@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchItems } from '../redux/modules/search'
-// import { push } from 'react-router-redux'
 
 let SearchForItems = ({ dispatch }) => {
   let input
@@ -11,8 +10,7 @@ let SearchForItems = ({ dispatch }) => {
       className="nav-search"
       onSubmit={e => {
         e.preventDefault()
-        dispatch(fetchItems(input.value))
-        // dispatch(push('/items'))
+        if (input.value !== '') dispatch(fetchItems(input.value))
       }}
     >
       <input
@@ -23,7 +21,11 @@ let SearchForItems = ({ dispatch }) => {
           input = node
         }}
       />
-      <button className="nav-search-btn">buscar</button>
+      <button className="nav-search-btn">
+        <i className="nav-icon-search">
+          <span>buscar</span>
+        </i>
+      </button>
     </form>
   )
 }

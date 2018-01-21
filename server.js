@@ -8,6 +8,8 @@ const app = express()
 const config = require('./webpack.config.js')
 const compiler = webpack(config)
 
+app.use('/api', require('./api'))
+
 if (process.env.NODE_ENV !== 'production') {
   // webpack-dev-middleware for serving webpack bundle witch custom server.
   app.use(
@@ -29,8 +31,6 @@ if (process.env.NODE_ENV !== 'production') {
   // serves react app
   app.use(express.static(path.resolve(__dirname, 'public')))
 }
-
-app.use('/api', require('./api'))
 
 app.listen(3000, () =>
   console.log(`MELI Product Search mini app is listening on port 3000 `)
