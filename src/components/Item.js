@@ -11,9 +11,14 @@ const Item = ({ item }) => {
           <div className="item-location">{item.location}</div>
           <div className="item-price">
             {item.price.amount}
-            <div className="item-shipping" title="Envío gratis a todo el país">
-              &nbsp;
-            </div>
+            {item.free_shipping && (
+              <div
+                className="item-shipping"
+                title="Envío gratis a todo el país"
+              >
+                &nbsp;
+              </div>
+            )}
           </div>
           <h2 className="item-title">
             <a>{item.title}</a>
