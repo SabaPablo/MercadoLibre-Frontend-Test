@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchItems } from '../redux/modules/search'
+import { push } from 'react-router-redux'
 
 let SearchForItems = ({ dispatch }) => {
   let input

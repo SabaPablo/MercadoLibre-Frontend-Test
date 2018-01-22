@@ -54,7 +54,7 @@ export function fetchItems(searchTerm) {
     dispatch(requestItems(searchTerm))
 
     try {
-      dispatch(push('/items'))
+      dispatch(push(`/items?search=${searchTerm}`))
       const { data } = await axios.get(`/api/items?q=${searchTerm}`)
       dispatch(receiveItems(searchTerm, data))
     } catch (e) {

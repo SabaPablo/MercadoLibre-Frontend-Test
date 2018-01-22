@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
 const Item = ({ item }) => {
   return (
     <li key={item.id} className="results-item">
@@ -21,7 +23,7 @@ const Item = ({ item }) => {
             )}
           </div>
           <h2 className="item-title">
-            <a>{item.title}</a>
+            <Link to={`/item/${item.id}`}>{item.title}</Link>
           </h2>
         </div>
       </div>

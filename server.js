@@ -29,8 +29,12 @@ if (process.env.NODE_ENV !== 'production') {
   )
 
   // serves react app
-  app.use(express.static(path.resolve(__dirname, 'public')))
+  // app.use(express.static(path.resolve(__dirname, 'public')))
 }
+
+app.get('*', function(req, res) {
+  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+})
 
 app.listen(3000, () =>
   console.log(`MELI Product Search mini app is listening on port 3000 `)

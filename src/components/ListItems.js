@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Item from './Item'
 
 const ListItems = ({ result }) => {
-  const items = result.searchResult.items
+  const { items = [] } = result.searchResult
   return (
     <div className="search-results">
       {items.length ? (
