@@ -10,7 +10,7 @@ const RECEIVE_ITEMS = 'meli-frontend/search/RECEIVE_ITEMS'
 
 const initialState = {
   searchTerm: '',
-  isFetchingData: false,
+  isFetchingData: true,
   searchResult: {}
 }
 

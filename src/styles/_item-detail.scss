@@ -19,6 +19,7 @@
       border-radius: 4px 0 0;
       height: auto;
       max-width: 100%;
+      background: #ccc;
     }
   }
 
@@ -62,6 +63,7 @@
 
 .item-title {
   font-size: 24px;
+  margin: 0;
 }
 
 .item-price::before {

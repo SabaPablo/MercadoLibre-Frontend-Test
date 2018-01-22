@@ -5,7 +5,11 @@ const ItemDetail = ({ result }) => {
     <div className="detail-container">
       <div className="item-description-container">
         <div className="item-image">
-          <img src={result.activeItem.item.picture} width="680" />
+          <img
+            src={result.activeItem.item.picture}
+            alt={result.activeItem.item.title}
+            width="680"
+          />
         </div>
         <div className="item-description">
           <h2>Descripción del producto</h2>

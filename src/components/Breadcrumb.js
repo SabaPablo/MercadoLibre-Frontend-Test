@@ -4,7 +4,9 @@ const Breadcrumb = ({ categories }) => {
   return (
     <div className="breadcrumb-container">
       {categories.length ? (
-        <ol>{categories.map(category => <li>{category}</li>)}</ol>
+        <ol>
+          {categories.map((category, index) => <li key={index}>{category}</li>)}
+        </ol>
       ) : (
         <span>Categorias</span>
       )}
