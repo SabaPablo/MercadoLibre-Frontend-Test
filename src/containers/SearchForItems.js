@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { fetchItems } from '../redux/modules/search'
-import { push } from 'react-router-redux'
 
 let SearchForItems = ({ dispatch }) => {
   let input
@@ -18,11 +17,12 @@ let SearchForItems = ({ dispatch }) => {
         className="nav-search-input"
         placeholder="Nunca dejes de buscar"
         type="text"
+        aria-label="Nunca dejes de buscar"
         ref={node => {
           input = node
         }}
       />
-      <button className="nav-search-btn">
+      <button className="nav-search-btn" aria-label="buscar">
         <i className="nav-icon-search">
           <span>buscar</span>
         </i>

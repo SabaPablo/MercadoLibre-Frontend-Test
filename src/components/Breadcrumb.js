@@ -2,7 +2,7 @@ import React from 'react'
 
 const Breadcrumb = ({ categories }) => {
   return (
-    <div className="breadcrumb-container">
+    <div className="breadcrumb-container" role="categories">
       {categories.length ? (
         <ol>
           {categories.map((category, index) => <li key={index}>{category}</li>)}

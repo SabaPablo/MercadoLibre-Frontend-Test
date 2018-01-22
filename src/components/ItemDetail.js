@@ -17,10 +17,15 @@ const ItemDetail = ({ result }) => {
         </div>
       </div>
       <div className="item-info-container">
-        <div className="item-conditions">Usado</div>
+        <div className="item-conditions">
+          {result.activeItem.item.condition === 'new' ? 'Nuevo' : 'Usado'} -
+          {result.activeItem.item.sold_quantity} vendidos
+        </div>
         <header className="item-title">{result.activeItem.item.title}</header>
-        <div className="item-price">1000</div>
-        <button className="ui-button--primary">Comprar</button>
+        <div className="item-price">{result.activeItem.item.price.amount}</div>
+        <button className="ui-button--primary" aria-label="comprarar">
+          Comprar
+        </button>
       </div>
     </div>
   )

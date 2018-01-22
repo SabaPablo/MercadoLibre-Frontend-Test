@@ -1,13 +1,11 @@
 import React from 'react'
 
-import { Link } from 'react-router-dom'
-
 const Item = ({ item, onItemClick }) => {
   return (
     <li key={item.id} className="results-item">
       <div className="row-item">
         <div className="results-item-image">
-          <img src={item.picture} />
+          <img src={item.picture} alt={item.title} />
         </div>
         <div className="results-item-info">
           <div className="item-location">{item.location}</div>

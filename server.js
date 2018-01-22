@@ -1,6 +1,7 @@
 const express = require('express')
 const webpack = require('webpack')
 const path = require('path')
+const compression = require('compression')
 const webpackDevMiddleware = require('webpack-dev-middleware')
 const webpackHotMiddleware = require('webpack-hot-middleware')
 
@@ -29,7 +30,12 @@ if (process.env.NODE_ENV !== 'production') {
   )
 
   // serves react app
-  // app.use(express.static(path.resolve(__dirname, 'public')))
+  app.use(express.static(path.resolve(__dirname, 'public')))
+} else {
+  console.log('Production')
+  // Production!
+  app.use(compression())
+  app.use(express.static(path.resolve(__dirname, 'public')))
 }
 
 app.get('*', function(req, res) {

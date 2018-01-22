@@ -42,7 +42,8 @@ const parseItemDetailResponse = ({
     id: itemDetail.id,
     title: itemDetail.title,
     price: {
-      currency: itemDetail.currency_id
+      currency: itemDetail.currency_id,
+      amount: itemDetail.price
     },
     picture: itemDetail.pictures.length ? itemDetail.pictures[0].url : '',
     condition: itemDetail.condition,

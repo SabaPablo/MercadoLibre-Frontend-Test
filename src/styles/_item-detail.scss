@@ -6,7 +6,7 @@
 .detail-container {
   display: flex;
   justify-content: space-between;
-  background-color: #ffffff;
+  background-color: $section-bg;
   margin-top: 16px;
   padding: 32px;
 
@@ -19,7 +19,6 @@
       border-radius: 4px 0 0;
       height: auto;
       max-width: 100%;
-      background: #ccc;
     }
   }
 
@@ -36,18 +35,19 @@
 }
 
 .ui-button--primary {
-  background: #3483fa;
+  background: $btn-primary;
   color: #fff;
   display: inline-block;
   width: 100%;
   padding: 12px 24px;
-  border-color: #3483fa;
+  border-color: $btn-primary;
   font-size: 16px;
   font-weight: 400;
   border-radius: 4px;
   cursor: pointer;
   border: 0;
 }
+
 .item-conditions {
   font-size: 14px;
   padding-bottom: 16px;
@@ -71,7 +71,7 @@
   margin-right: 5px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   .detail-container {
     flex-direction: column;
   }

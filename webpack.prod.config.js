@@ -1,17 +1,13 @@
 const path = require('path')
 const webpack = require('webpack')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
 module.exports = {
-  entry: [
-    'babel-polyfill',
-    'react-hot-loader/patch',
-    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000',
-    './src/index.js'
-  ],
+  entry: ['babel-polyfill', './src/index.js'],
   devtool: 'inline-source-map',
   output: {
-    filename: 'dist/bundle.js',
+    filename: 'bundle.js',
     path: path.resolve(__dirname, 'public'),
     publicPath: '/'
   },
@@ -42,7 +38,11 @@ module.exports = {
       disable: false,
       allChunks: true
     }),
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoEmitOnErrorsPlugin()
+    new webpack.DefinePlugin({
+      'process.env.NODE_ENV': JSON.stringify('production')
+    }),
+    new UglifyJsPlugin({
+      sourceMap: true
+    })
   ]
 }
