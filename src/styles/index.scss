@@ -1,4 +1,7 @@
-// _vars
+// Normalize
+@import './normalize.scss';
+
+// vars
 @import './_vars.scss';
 
 // Mixins
@@ -15,3 +18,6 @@
 
 // Items
 @import './_items.scss';
+
+// Detail Item
+@import './item-detail.scss';

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Link } from 'react-router-dom'
 
-const Item = ({ item }) => {
+const Item = ({ item, onItemClick }) => {
   return (
     <li key={item.id} className="results-item">
       <div className="row-item">
@@ -23,7 +23,7 @@ const Item = ({ item }) => {
             )}
           </div>
           <h2 className="item-title">
-            <Link to={`/item/${item.id}`}>{item.title}</Link>
+            <a onClick={() => onItemClick(item.id)}>{item.title}</a>
           </h2>
         </div>
       </div>

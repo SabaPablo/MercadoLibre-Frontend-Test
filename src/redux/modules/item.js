@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { push } from 'react-router-redux'
 
 // Actions
 
@@ -9,7 +10,7 @@ const RECEIVE_ITEM_DETAIL = 'meli-frontend/item/RECEIVE_ITEM_DETAIL'
 
 const initialState = {
   itemRequested: '',
-  isFetchingData: false,
+  isFetchingData: true,
   activeItem: {}
 }
 
@@ -54,6 +55,7 @@ export function fetchItemDetail(itemRequested) {
 
     try {
       const { data } = await axios.get(`/api/items/${itemRequested}`)
+      dispatch(push(`/item/${itemRequested}`))
       dispatch(receiveItemDetail(itemRequested, data))
     } catch (e) {
       console.log(e)

@@ -12,22 +12,29 @@ class ItemDetailResult extends Component {
   }
 
   componentDidMount() {
-    const { dispatch, match: { params } } = this.props
+    const {
+      dispatch,
+      match: { params },
+      result: { itemRequested }
+    } = this.props
 
-    dispatch(fetchItemDetail(params.id))
+    // Fetch item detail if you manually reach to /item/:id
+    if (!itemRequested) {
+      dispatch(fetchItemDetail(params.id))
+    }
   }
 
   render() {
     const { isFetchingData } = this.props.result
 
     return (
-      <div>
+      <section className="detail-section">
         {isFetchingData ? (
           <MDSpinner singleColor="#999999" />
         ) : (
           <ItemDetail result={this.props.result} />
         )}
-      </div>
+      </section>
     )
   }
 }

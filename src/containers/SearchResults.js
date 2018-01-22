@@ -6,16 +6,16 @@ import { withRouter } from 'react-router-dom'
 import qs from 'query-string'
 
 import { fetchItems } from '../redux/modules/search'
+import { fetchItemDetail } from '../redux/modules/item'
 
 class SearchResults extends Component {
   componentDidMount() {
-    const { dispatch, result: { searchTerm } } = this.props
+    const { reload, result: { searchTerm } } = this.props
 
-    // Only when you navigate directly to /items?search=
-    // without using the search form.
+    // When you reach /items?search= manually
     if (!searchTerm) {
       const query = qs.parse(this.props.location.search)
-      dispatch(fetchItems(query.search || ''))
+      reload(query.search || '')
     }
   }
 
@@ -27,7 +27,10 @@ class SearchResults extends Component {
         {isFetchingData ? (
           <MDSpinner singleColor="#999999" />
         ) : (
-          <ListItems result={this.props.result} />
+          <ListItems
+            result={this.props.result}
+            onItemClick={this.props.onItemClick}
+          />
         )}
       </section>
     )
@@ -40,4 +43,17 @@ const mapStateToProps = state => {
   }
 }
 
-export default withRouter(connect(mapStateToProps)(SearchResults))
+const mapDispatchToProps = dispatch => {
+  return {
+    onItemClick: id => {
+      dispatch(fetchItemDetail(id))
+    },
+    reload: id => {
+      dispatch(fetchItems(id))
+    }
+  }
+}
+
+export default withRouter(
+  connect(mapStateToProps, mapDispatchToProps)(SearchResults)
+)
