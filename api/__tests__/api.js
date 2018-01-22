@@ -72,7 +72,7 @@ describe('Parser of Item Details from MELI API', () => {
     fs.readFileSync('./api/__mockData__/itemDetail.json', 'utf8')
   )
   const itemDescription = JSON.parse(
-    fs.readFileSync('./api/__mockData__/itemDetail.json', 'utf8')
+    fs.readFileSync('./api/__mockData__/itemDescription.json', 'utf8')
   )
 
   test('Can map MELI Item Detail/Description API with the internal API', () => {

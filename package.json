@@ -4,20 +4,17 @@
   "description": "Test Practico de Frontend para MercadoLibre",
   "main": "server.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --no-cache",
     "dev": "node server.js",
     "build": "webpack"
   },
-  "keywords": [
-    "frontend",
-    "mercadolibre",
-    "meli",
-    "test"
-  ],
+  "keywords": ["frontend", "mercadolibre", "meli", "test"],
   "author": "Rodrigo Lemos",
   "license": "MIT",
   "jest": {
-    "transform": {}
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
   },
   "dependencies": {
     "axios": "^0.17.1",
@@ -41,6 +38,7 @@
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.1.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",

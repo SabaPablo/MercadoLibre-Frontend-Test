@@ -3,8 +3,8 @@ import { push } from 'react-router-redux'
 
 // Actions
 
-const REQUEST_ITEMS = 'meli-frontend/search/REQUEST_ITEMS'
-const RECEIVE_ITEMS = 'meli-frontend/search/RECEIVE_ITEMS'
+export const REQUEST_ITEMS = 'meli-frontend/search/REQUEST_ITEMS'
+export const RECEIVE_ITEMS = 'meli-frontend/search/RECEIVE_ITEMS'
 
 // Initial State
 
