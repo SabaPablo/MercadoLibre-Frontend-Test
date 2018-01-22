@@ -32,7 +32,11 @@ const parseItemsResponse = ({ results, filters }) => {
   return { author, categories, items }
 }
 
-const parseItemDetailResponse = ({ itemDetail, itemDescription }) => {
+const parseItemDetailResponse = ({
+  itemDetail,
+  itemDescription,
+  itemCategory
+}) => {
   // Item Detail structure that fits with API details.
   const item = {
     id: itemDetail.id,
@@ -47,7 +51,15 @@ const parseItemDetailResponse = ({ itemDetail, itemDescription }) => {
     description: itemDescription.plain_text
   }
 
-  return { author, item }
+  // Build json categories structure from path_from_root API array.
+  const categories = []
+
+  if (itemCategory.path_from_root.length) {
+    const { path_from_root: pathFromRoot } = itemCategory
+    pathFromRoot.map(category => categories.push(category.name))
+  }
+
+  return { author, categories, item }
 }
 
 module.exports = { parseItemsResponse, parseItemDetailResponse }

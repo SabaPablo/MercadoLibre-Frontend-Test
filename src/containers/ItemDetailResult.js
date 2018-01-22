@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import MDSpinner from 'react-md-spinner'
 import ItemDetail from '../components/ItemDetail'
+import Breadcrumb from '../components/Breadcrumb'
 import { withRouter } from 'react-router-dom'
 
 import { fetchItemDetail } from '../redux/modules/item'
@@ -25,14 +26,17 @@ class ItemDetailResult extends Component {
   }
 
   render() {
-    const { isFetchingData } = this.props.result
+    const { isFetchingData, activeItem: { categories } } = this.props.result
 
     return (
       <section className="detail-section">
         {isFetchingData ? (
           <MDSpinner singleColor="#999999" />
         ) : (
-          <ItemDetail result={this.props.result} />
+          <React.Fragment>
+            <Breadcrumb categories={categories} />
+            <ItemDetail result={this.props.result} />
+          </React.Fragment>
         )}
       </section>
     )

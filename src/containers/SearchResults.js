@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import MDSpinner from 'react-md-spinner'
 import ListItems from '../components/ListItems'
+import Breadcrumb from '../components/Breadcrumb'
 import { withRouter } from 'react-router-dom'
 import qs from 'query-string'
 
@@ -20,17 +21,20 @@ class SearchResults extends Component {
   }
 
   render() {
-    const { isFetchingData } = this.props.result
+    const { isFetchingData, searchResult: { categories } } = this.props.result
 
     return (
       <section className="results-section">
         {isFetchingData ? (
           <MDSpinner singleColor="#999999" />
         ) : (
-          <ListItems
-            result={this.props.result}
-            onItemClick={this.props.onItemClick}
-          />
+          <React.Fragment>
+            <Breadcrumb categories={categories} />
+            <ListItems
+              result={this.props.result}
+              onItemClick={this.props.onItemClick}
+            />
+          </React.Fragment>
         )}
       </section>
     )

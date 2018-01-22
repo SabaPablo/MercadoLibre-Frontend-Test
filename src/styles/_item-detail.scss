@@ -1,5 +1,6 @@
 .detail-section {
   width: 100%;
+  margin-top: 16px;
 }
 
 .detail-container {
@@ -27,6 +28,10 @@
       word-wrap: break-word;
     }
   }
+}
+
+.item-info-container {
+  margin-left: 16px;
 }
 
 .ui-button--primary {

@@ -33,7 +33,13 @@ router.get('/items/:id', async ({ params: { id } }, res, next) => {
       ]
     )
 
-    res.send(parseItemDetailResponse({ itemDetail, itemDescription }))
+    const { data: itemCategory } = await meliRequest.get(
+      `/categories/${itemDetail.category_id}`
+    )
+
+    res.send(
+      parseItemDetailResponse({ itemDetail, itemDescription, itemCategory })
+    )
   } catch (err) {
     next(err.data)
   }
