@@ -17,9 +17,19 @@ Demo: https://mercadolibre-frontend-test-huyctooxrv.now.sh/
 
 > Decidi no utilizar ningún project starter como Create React App para poder pasar por todas las etapas y configuraciones al hacer un proyecto realmente desde cero.
 
----
-
 ### Comandos
+
+Instalar dependencias
+
+```
+$ npm install
+```
+
+Ejecutar Tests
+
+```
+$ npm run test
+```
 
 Dev
 
