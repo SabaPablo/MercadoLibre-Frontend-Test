@@ -17,8 +17,10 @@ const App = () => {
       <main role="main">
         <div className="ml-content">
           <Switch>
+            <Route exact path="/" />
             <Route exact path="/items" component={SearchResults} />
             <Route path="/item/:id" component={ItemDetailResult} />
+            <Route render={() => <div>404 - Ruta no encontrada</div>} />
           </Switch>
         </div>
       </main>

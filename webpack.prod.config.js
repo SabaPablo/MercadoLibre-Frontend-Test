@@ -7,7 +7,7 @@ module.exports = {
   entry: ['babel-polyfill', './src/index.js'],
   devtool: 'inline-source-map',
   output: {
-    filename: 'bundle.js',
+    filename: 'dist/bundle.js',
     path: path.resolve(__dirname, 'public'),
     publicPath: '/'
   },
@@ -27,7 +27,7 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        include: path.join(__dirname, 'public/assets'),
+        // include: path.join(__dirname, 'public/assets'),
         use: ['file-loader']
       }
     ]
